@@ -1,0 +1,8 @@
+# Parameters file used for inference
+
+# Number of predictions to perform
+dataset_size:60
+
+input_size:10
+
+output_size:10

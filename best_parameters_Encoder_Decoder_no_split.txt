@@ -1,0 +1,117 @@
+# name of model to use 
+model_name:EncoderDecoder_no_split_outputs
+
+# number of patients 
+dataset_size:1000
+
+# input window size
+input_size:30
+
+# target window size
+output_size:10
+
+# (*) use split outputs function
+split_outputs:False
+
+# (*) save final model
+save_model:True
+
+# (*) save model at checkpoint
+checkpoint_save:False
+
+# (*) number of example predictions to produce
+nb_graphs:100
+
+# (*) number of best models to rank
+n_best_models:None
+
+# (*) "a" parameter for MinMax Normalization
+min_norm_threshold:0
+
+# (*) "b" parameter for MinMax Normalization
+max_norm_threshold:1
+
+# regression output activation function
+last_activation:sigmoid
+
+# rnn output dense activation (EncoderDecoder_with_attention only)
+rnn_output_dense_activation:elu
+
+# weights initialization
+kernel_initializer:glorotUniform
+
+# optimizers (gradient descent algorithm)
+optimizer:adamax
+
+# (*) evaluation dataset percentage
+test_size:0.2
+
+# (*) validation dataset percentage (percentage of training dataset, without evaluation dataset)
+val_split:0.25
+
+# number of epochs
+epochs:30
+
+# (*) max number of dataset folds to train on
+max_fold:20
+
+# training batch size
+batch_size:32
+
+# validation batch_size
+validation_batch_size:None
+
+# evaluation batch_size
+eval_batch_size:None
+
+# learning rate
+lr:0.00075
+
+# regression output loss function
+loss:mse
+
+# (*) regression output loss function weight
+loss_weight:100
+
+# action output loss function
+event_loss:categorical_crossentropy
+
+# (*) action output loss function weight
+event_loss_weight:1
+
+# (*) use early stopper tensorflow callback
+early_stopper:True
+
+# (*) early stopper minimum delta
+min_delta:0.0001
+
+# (*) early stopper patience
+patience:3
+
+# (*) delay for accuracy_with_lag function
+delay:1
+
+# (*) number of layers in encoder module
+n_encoder_layers:2
+
+# ([]) number of neurons in each encoder layer (from input to output layer)
+encoder_neurons:[[440,440]]
+
+# (*) number of layers in decoder module
+n_decoder_layers:2
+
+# ([]) number of neurons in each decoder layer (from input to output layer)
+decoder_neurons:[[440,440]]
+
+# rnn output dense number of neurons (EncoderDecoder_with_attention only) 
+rnn_output_dense_neurons:2048
+
+# ([]) dropout fractions
+encoder_dropout:None
+
+decoder_dropout:None
+
+# ([]) recurrent dropout fractions
+encoder_recurrent_dropout:None
+
+decoder_recurrent_dropout:None
