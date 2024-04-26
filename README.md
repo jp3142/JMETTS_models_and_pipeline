@@ -48,7 +48,7 @@ To install the required librairies, a conda environment is highly recommended [c
 A yaml file is provided with the software to automatically download the correct librairies versions.
 
 **Steps**:
-1. Open the yaml file and set the prefix path to where you want to install the **julien_deepL** environment. By default, the environment is installed in */home/miniconda3/envs/julien_deepL* but errors can be triggered if some directories don't exist.
+1. Open the yaml file and set the prefix path to where you want to install the **env.yml** environment. By default, the environment is installed in */home/miniconda3/envs/julien_deepL* but errors can be triggered if some directories don't exist.
 2. Install the conda environment using the command: `conda env create -f julien_env.yml`
 
 # Parameters file
