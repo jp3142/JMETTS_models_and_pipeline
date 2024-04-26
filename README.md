@@ -49,7 +49,7 @@ A yaml file is provided with the software to automatically download the correct 
 
 **Steps**:
 1. Open the yaml file and set the prefix path to where you want to install the **env.yml** environment. By default, the environment is installed in */home/miniconda3/envs/julien_deepL* but errors can be triggered if some directories don't exist.
-2. Install the conda environment using the command: `conda env create -f julien_env.yml`
+2. Install the conda environment using the command: `conda env create -f env.yml`
 
 # Parameters file
 
