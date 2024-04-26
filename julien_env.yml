@@ -1,4 +1,4 @@
-name: julien_deepL
+name: julien_env
 channels:
   - conda-forge
   - defaults
@@ -78,4 +78,4 @@ dependencies:
     - werkzeug==2.1.2
     - wrapt==1.14.1
     - zipp==3.8.0
-prefix: /home/miniconda3/envs/julien_deepL
+prefix: /home/miniconda3/envs/julien_env
