@@ -48,7 +48,7 @@ To install the required librairies, a conda environment is highly recommended [c
 A yaml file is provided with the software to automatically download the correct librairies versions.
 
 **Steps**:
-1. Open the yaml file and set the prefix path to where you want to install the **env.yml** environment. By default, the environment is installed in */home/miniconda3/envs/julien_deepL* but errors can be triggered if some directories don't exist.
+1. Open the yaml file and set the prefix path to where you want to install the **env.yml** environment. By default, the environment is installed in */home/miniconda3/envs/env* but errors can be triggered if some directories don't exist.
 2. Install the conda environment using the command: `conda env create -f env.yml`
 
 # Parameters file
@@ -136,7 +136,7 @@ Each time serie values file id in *dataset_train1000* has its associated event s
 To start the training you need to:
 1. Use correctly formatted dataset folders and files.
 2. Edit *training_parameters.txt* file. If any parameter has a wrong format the script won't work and an error message will be displayed.
-3. Activate conda environment: `conda activate julien_deepL`
+3. Activate conda environment: `conda activate env`
 4. Start traing (from working directory): `python3 main_start_training.py <parameters_file> <dataset_series_directory_path> <dataset_events_directory_path> <experiments_directory> <experiment_name>`. 
 Example: `python3 main_start_training.py training_parameters.txt multivariate_datasets/dataset_train1000/ multivariate_datasets/dataset_train1000_events/ my_logs/ experiment_test`.
 We recommend to call `<experiments_directory>` "my_logs" to avoid any future problems during data visualization section.
@@ -229,7 +229,7 @@ Tensorflow uses a specific software to visualize data called **tensorboard**.
 You can plot every training results (loss / metrics / plots) of a whole `<experiments_dir`> directory (containing all experiments). To use this script please make sure that this directory is called **"my_logs"** otherwise the script won't be able to open tensorboard API. This script will start tensorboard in a new Firefox tab. Make sure firefox is installed on your computer (or edit the sh script to use another web browser).
 This script starts tensorboard on port 6006. The script kills the process when pressing a key in the command prompt. To see the current processes id present on this port you can use the command `lsof -i:6006`. To kill any concurrent process (for example when trying to start tensorboard if the previous tensorboard process is still running) you can use `kill <process_id>`.
 
-To execute tensorboard and visualize all data: `./run_tensorboard.sh my_logs/`. Make sure *julien_deepL* conda environment is activated before using this script or an error message will be displayed.
+To execute tensorboard and visualize all data: `./run_tensorboard.sh my_logs/`. Make sure *env.yml* conda environment is activated before using this script or an error message will be displayed.
 
 # Metric names and descriptions
 
