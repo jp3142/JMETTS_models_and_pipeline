@@ -2,7 +2,7 @@
 
 **Author**: Julien Paris, Intern in LS2N (Laboratoire des Sciences du Numérique), Nantes University, 2022.
 
-**Author note**: I designed this software during my last year Bioinformatics master degree 6 months internship in "Laboratoire des Sciences du Numérique (LS2N)" of Nantes University within the DUKe team (Data User Knowledge).
+**Authors' note**: I designed this software during my last year Bioinformatics master degree 6 months internship in "Laboratoire des Sciences du Numérique (LS2N)" of Nantes University within the DUKe team (Data User Knowledge). I was supervized by Christine Sinoquet, Associate Professor.
 
 This software performs hyper parameters gridsearch and crossvalidation to optimize neural network model trainings. The neural networks proposed in this software are designed to perform a joint modeling of continuous timeserie values and associated events (literal) records. This software was specifically created for DBLBS (Dama-Boisaubert-Lejus-Bourdeau-Sinoquet) dataset. DBLBS is a realistic chirurgical dataset generator designed by the DUKe team of LS2N laboratory. However this software can be enhanced to any kind of joint data (continuous timeserie values and associated discontinuous events) with the only condition of creating a dataset following the same pattern as DBLBS dataset. The DBLBS dataset is for now specialized in the generation of 4 physiological parameters for one specific chirurgical intervention: 
 - FC: heart rate (Fréquence Cardiaque)
